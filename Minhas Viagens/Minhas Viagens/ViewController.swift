@@ -8,11 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var arrayPlace = ["Rio de Janeiro" , "São Paulo" , "Araraquara" , "Salvador", "Ribeirão Preto"]
+    @IBOutlet weak var tableView: UITableView!
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +31,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayPlace.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = arrayPlace[indexPath.row]
+        
+        return cell
+    }
+    
+ 
 }
 
