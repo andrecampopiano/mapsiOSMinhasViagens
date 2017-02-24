@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.controlNav = "adicionar"
+        self.controlNav = "add"
         self.reloadTravel()
     }
     override func didReceiveMemoryWarning() {
