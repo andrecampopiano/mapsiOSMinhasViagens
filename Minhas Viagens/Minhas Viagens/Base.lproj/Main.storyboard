@@ -48,7 +48,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CQn-Bj-2XF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="J9p-67-9zr" kind="show" id="o6A-fV-zJX"/>
+                                <segue destination="J9p-67-9zr" kind="show" identifier="showPlace" id="o6A-fV-zJX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -97,7 +97,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YIM-M2-8j5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="20H-fH-fzx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="20H-fH-fzx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

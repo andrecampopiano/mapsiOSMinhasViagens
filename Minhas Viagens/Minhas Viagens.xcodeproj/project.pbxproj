@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E40763E1E5F75310055EEFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E40763D1E5F75310055EEFF /* CoreLocation.framework */; };
+		6E4076401E5F7A400055EEFF /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E40763F1E5F7A400055EEFF /* DataStorage.swift */; };
 		940435741E5F40C6007AD423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940435731E5F40C6007AD423 /* AppDelegate.swift */; };
 		940435761E5F40C6007AD423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940435751E5F40C6007AD423 /* ViewController.swift */; };
 		940435791E5F40C6007AD423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940435771E5F40C6007AD423 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E40763D1E5F75310055EEFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6E40763F1E5F7A400055EEFF /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		940435701E5F40C6007AD423 /* Minhas Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minhas Viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		940435731E5F40C6007AD423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		940435751E5F40C6007AD423 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E40763E1E5F75310055EEFF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E40763C1E5F75310055EEFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E40763D1E5F75310055EEFF /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		940435671E5F40C6007AD423 = {
 			isa = PBXGroup;
 			children = (
 				940435721E5F40C6007AD423 /* Minhas Viagens */,
 				940435711E5F40C6007AD423 /* Products */,
+				6E40763C1E5F75310055EEFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +73,7 @@
 				940435731E5F40C6007AD423 /* AppDelegate.swift */,
 				940435751E5F40C6007AD423 /* ViewController.swift */,
 				940435881E5F57D5007AD423 /* MapViewController.swift */,
+				6E40763F1E5F7A400055EEFF /* DataStorage.swift */,
 				940435771E5F40C6007AD423 /* Main.storyboard */,
 				9404357A1E5F40C6007AD423 /* Assets.xcassets */,
 				9404357C1E5F40C6007AD423 /* LaunchScreen.storyboard */,
@@ -143,6 +158,7 @@
 				940435761E5F40C6007AD423 /* ViewController.swift in Sources */,
 				940435891E5F57D5007AD423 /* MapViewController.swift in Sources */,
 				940435741E5F40C6007AD423 /* AppDelegate.swift in Sources */,
+				6E4076401E5F7A400055EEFF /* DataStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				940435841E5F40C6007AD423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
